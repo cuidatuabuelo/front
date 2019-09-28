@@ -7,11 +7,17 @@ import { UserList } from './screens/users/users';
 import {landing } from './screens/landing/landing';
 import { API_URL } from './conf';
 import { authProvider } from './services/auth/auth';
+import spanishMessages from 'ra-language-spanish';
 
+const messages = {
+  es: spanishMessages,
+}
+
+const i18nProvider = locale => messages[locale];
 
 const dataProvider = jsonServerProvider(API_URL);
 const App = () => (
-  <Admin dashboard={landing} dataProvider={dataProvider} authprovider={authProvider}>
+  <Admin locale="es" i18nProvider={i18nProvider} dashboard={landing} dataProvider={dataProvider} authprovider={authProvider}>
     <Resource name="users" list={UserList} />
   </Admin>
 );
