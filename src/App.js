@@ -16,7 +16,7 @@ const i18nProvider = locale => messages[locale];
 
 const dataProvider = jsonServerProvider(API_URL);
 const App = () => (
-  <Admin locale="es" i18nProvider={i18nProvider} dashboard={homePage} dataProvider={dataProvider} authprovider={authProvider}>
+  <Admin locale="es" i18nProvider={i18nProvider} dashboard={homePage} dataProvider={dataProvider} authProvider={authProvider}>
     <Resource name="users" list={UserList} />
   </Admin>
 );
