@@ -7,7 +7,7 @@ export const homePage = props => {
         <>
             <Grid container spacing={24}>
                 <Grid item xs={12} >
-                </Grid>
+                </Grid>add
             </Grid>
         </>
     );
