@@ -142,7 +142,7 @@ EnhancedLogin.propTypes = {
 };
 
 EnhancedLogin.defaultProps = {
-    backgroundImage: 'https://source.unsplash.com/random/1600x900/daily',
+    backgroundImage: '/assets/login.jpg',
     theme: defaultTheme,
     loginForm: <DefaultLoginForm />,
 };
